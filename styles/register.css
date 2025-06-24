@@ -1,0 +1,99 @@
+/* Reset y base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor del registro */
+.register-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.register-container h2 {
+    margin-bottom: 24px;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+/* Campos del formulario */
+.register-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #121db4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.register-container button:hover {
+    background-color: #5627ae;
+}
+
+.register-container .login-link {
+    display: block;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.register-container .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .register-container {
+        padding: 24px 18px;
+    }
+
+    .register-container h2 {
+        font-size: 22px;
+    }
+
+    .register-container input,
+    .register-container button {
+        font-size: 14px;
+    }
+}
+
+.error-msg {
+    background-color: #fdecea;
+    color: #c0392b;
+    padding: 12px;
+    border: 1px solid #e0b4b4;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    text-align: center;
+}

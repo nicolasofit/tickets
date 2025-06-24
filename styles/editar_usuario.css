@@ -1,0 +1,73 @@
+.editar-contenido {
+    padding: 30px 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.editar-contenido h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-editar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.form-editar label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-editar input,
+.form-editar select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-editar button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.form-editar button:hover {
+    background-color: #1e8449;
+}
+
+.cancelar-link {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    color: #888;
+    text-decoration: none;
+}
+
+.cancelar-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-editar {
+        padding: 15px;
+    }
+
+    .form-editar button {
+        width: 100%;
+    }
+}
